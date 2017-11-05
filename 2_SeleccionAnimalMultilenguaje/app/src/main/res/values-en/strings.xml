@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Animal choose</string>
+    <string name="idPerro">Dog</string>
+    <string name="idDelfin">Dolphin</string>
+    <string name="idElefante">Elephant</string>
+    <string name="idLobo">Wolf</string>
+    <string name="elegir">Choose a animal</string>
+</resources>

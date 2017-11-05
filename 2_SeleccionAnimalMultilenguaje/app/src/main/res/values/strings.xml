@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SeleccionAnimal</string>
+    <string name="elegir">Elige un animal</string>
+    <string name="idLobo">Lobo</string>
+    <string name="idDelfin">Delfin</string>
+    <string name="idElefante">Elefante</string>
+    <string name="idPerro">Perro</string>
+
+    <string-array name="listaAnimales">
+        <item name="id_Lobo">@string/idLobo</item>
+        <item name="id_Delfin">@string/idDelfin</item>
+        <item name="id_Elefante">@string/idElefante</item>
+        <item name="id_Perro">@string/idPerro</item>
+    </string-array>
+</resources>

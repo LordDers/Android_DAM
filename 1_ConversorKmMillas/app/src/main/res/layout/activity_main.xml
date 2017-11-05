@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.usuario6i.conversorkmmillas.MainActivity">
+
+    <TextView
+        android:text="KM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:id="@+id/textViewKm"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="79dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="28dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_alignBottom="@+id/textViewKm"
+        android:layout_toRightOf="@+id/textViewKm"
+        android:layout_toEndOf="@+id/textViewKm"
+        android:id="@+id/textKm"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="65dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.639" />
+
+    <TextView
+        android:text="Millas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewMillas"
+        android:layout_below="@+id/textViewKm"
+        android:layout_toLeftOf="@+id/textKm"
+        android:layout_toStartOf="@+id/textKm"
+        android:layout_marginStart="28dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textMillas"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="28dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_alignBottom="@+id/textViewMillas"
+        android:layout_alignLeft="@+id/textKm"
+        android:layout_alignStart="@+id/textKm"
+        android:id="@+id/textMillas"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/textKm"
+        app:layout_constraintTop_toBottomOf="@+id/textKm"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/textKm" />
+
+    <Button
+        android:text="KM - Millas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewMillas"
+        android:layout_alignLeft="@+id/textViewKm"
+        android:layout_alignStart="@+id/textViewKm"
+        android:id="@+id/btnKmMillas"
+        android:onClick="convertKmMillas"
+        android:layout_marginStart="28dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnMillasKm"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="28dp" />
+
+    <Button
+        android:text="Millas - KM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnKmMillas"
+        android:layout_alignRight="@+id/textMillas"
+        android:layout_alignEnd="@+id/textMillas"
+        android:id="@+id/btnMillasKm"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="183dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/btnKmMillas"
+        android:layout_marginLeft="52dp"
+        android:onClick="convertMillasKm" />
+
+</android.support.constraint.ConstraintLayout>
